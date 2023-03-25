@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+body {
+  width: 100%;
+  height: 100%;
+  /* rgba is a function used to define color stops.last value is 0 to 1 
+    which define transperency of the color */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/backgoundImg.png");
+
+  background-size: cover;
+  background-attachment: fixed;
+  /* color: #ffc233; */
+}
+
+nav {
+    width: 100%;
+    padding: 0 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  height: 15%;
+  margin-top: 40px;
+}
+nav .logo {
+  height: 40px;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+nav .menu-items {
+  list-style: none;
+  cursor: pointer;
+}
+nav ul li:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffc233;
+}
+nav ul li a {
+  text-decoration: none;
+
+  color: #ffc233;
+}
+.btn-small {
+  background-color: #ff505f;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 40px;
+  border: none;
+  font-size: 24px;
+  font-style: normal;
+  cursor: pointer;
+}
+main {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  margin-top: 64px;
+}
+main h1 {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+
+  text-align: center;
+  color: #ffc233;
+}
+.btn-large {
+  background-color: #ff515f;
+  color: #ffffff;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  padding: 20px 50px;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 64px;
+}
+footer {
+  /* height: 15%; */
+
+
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+footer img{
+    height: 150px;
+}
